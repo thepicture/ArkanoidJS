@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="EN-en">
+<head>
+    <title>ArkanoidJS</title>
+    <link rel="stylesheet" href="lib/style.css"/>
+</head>
+
+<body>
+<div class="hud"></div>
+<div class="game-field">
+    <div class="info">
+        <b>ArkanoidJS</b>
+        <br/>
+        A and D to move left or right
+        <br/>
+        Space to run game
+    </div>
+</div>
+<div class="start-button"></div>
+<div class="score">Score: 0</div>
+<div class="platform"></div>
+<div class="background"></div>
+<div class="stacker">
+    <div class="touch-button button-left">LEFT</div>
+    <div class="touch-button button-space">SPACE</div>
+    <div class="touch-button button-right">RIGHT</div>
+</div>
+<meter
+        class="health-meter"
+        low="33"
+        high="66"
+        max="100"
+        optimum="100"
+        value="100"
+></meter>
+<audio id="platform-hit" src="lib/audio/platform_hit.wav"></audio>
+<audio id="ball-hit" src="lib/audio/ball_hit.wav"></audio>
+<audio id="block-hit" src="lib/audio/block_hit.wav"></audio>
+<audio id="in-game" src="lib/audio/in_game.wav"></audio>
+<audio id="await" src="lib/audio/await.wav"></audio>
+<script src="lib/script.js"></script>
+</body>
+</html>
